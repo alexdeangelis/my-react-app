@@ -29,6 +29,9 @@ jobs:
       - name: Set up Git in the /build directory
         run: cd ./build && git init
       
+      - name: Check the /build directory
+        run: ls -la ./build
+
       - name: Write Something
         run: echo 'All done!'
 
@@ -39,5 +42,5 @@ jobs:
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build
-          remote-dir: /
-          protocol: ftp
+          remote-dir: /public_html
+          protocol: ftps
