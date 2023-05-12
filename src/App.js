@@ -1,9 +1,11 @@
+import Title from './components/Title'
+
 function App() {
   return (
     <section>
-      <h1>Hello World!</h1>
+      <Title />
     </section>
-  );
+  )
 }
 
-export default App;
+export default App
