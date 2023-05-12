@@ -26,11 +26,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Set up Git in the /build directory
-        run: cd ./build && git init
+      # - name: Set up Git in the /build directory
+      #   run: cd ./build && git init
       
-      - name: Check the /build directory
-        run: ls -la ./build
+      # - name: Check the /build directory
+      #   run: ls -la ./build
 
       - name: Write Something
         run: echo 'All done!'
