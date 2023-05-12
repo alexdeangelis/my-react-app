@@ -1,7 +1,7 @@
 import classes from './Title.module.css'
 
-function Title() {
-  return <h1 className={classes.title}>Hello World!</h1>
+function Title(props) {
+  return <h1 className={classes.title}>{props.text}</h1>
 }
 
 export default Title

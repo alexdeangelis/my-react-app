@@ -1,9 +1,12 @@
 import Title from './components/Title'
 
 function App() {
+
+  const text = 'Hello World!'
+
   return (
     <section>
-      <Title />
+      <Title text={text} />
     </section>
   )
 }
