@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: What's in the folder?
-        run: ls -la
+        run: ls -la ./build
       
       - name: Write Something
         run: echo 'All done!'
