@@ -25,16 +25,19 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: What's in the folder?
+        run: ls -la
       
       - name: Write Something
         run: echo 'All done!'
 
-      - name: Deploy to GoDaddy Hosting
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build
-          remote-dir: /public_html
-          protocol: ftps
+      # - name: Deploy to GoDaddy Hosting
+      #   uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      #   with:
+      #     ftp-server: ${{ secrets.FTP_SERVER }}
+      #     ftp-username: ${{ secrets.FTP_USERNAME }}
+      #     ftp-password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: ./build
+      #     remote-dir: /public_html
+      #     protocol: ftps
