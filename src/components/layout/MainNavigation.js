@@ -37,6 +37,16 @@ function MainNavigation() {
               Products
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to='/privacy-policy'
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Privacy Policy
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
