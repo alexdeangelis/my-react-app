@@ -26,11 +26,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: run Lighthouse CI
-        run: | 
-            npm install -g @lhci/cli@0.11.x
-            lhci autorun
-
       - name: Deploy to GoDaddy Hosting
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -40,3 +35,11 @@ jobs:
           local-dir: ./build/
           server-dir: ./
           protocol: ftp
+
+      - name: Lighthouse CI Action
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            https://www.alexdeangelis.me/
+            https://www.alexdeangelis.me/about
+          temporaryPublicStorage: true
