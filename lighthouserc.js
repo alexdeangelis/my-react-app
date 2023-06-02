@@ -5,7 +5,7 @@ module.exports = {
         'http://127.0.0.1:3000'
       ],
       startServerCommand: "npm run build",
-      startServerReadyPattern: "Compiled successfully!",
+      startServerReadyPattern: "Compiled successfully",
       numberOfRuns: 1
     },
     upload: {
