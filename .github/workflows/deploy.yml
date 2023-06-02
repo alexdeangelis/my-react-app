@@ -41,5 +41,4 @@ jobs:
         with:
           urls: |
             https://www.alexdeangelis.me
-            https://www.alexdeangelis.me/about
           temporaryPublicStorage: true
