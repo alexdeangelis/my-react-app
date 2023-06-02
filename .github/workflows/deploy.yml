@@ -40,6 +40,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v10
         with:
           urls: |
-            https://www.alexdeangelis.me/
+            https://www.alexdeangelis.me
             https://www.alexdeangelis.me/about
           temporaryPublicStorage: true
